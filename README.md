@@ -1,3 +1,18 @@
-# My Awesome Book
+# 超赢统一支付API
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+> 仅供内部使用
+
+###### 版本：1.0.0
+
+###### 最后维护：尹自强，yinziqiang@chaoying.com.cn
+
+###### 更新日期：2017-06-18
+
+# ![](/assets/尹自强7.jpg)
+
+# 版本说明
+
+* _1.0.0_  2017-05-17
+
+添加多个接口
+
