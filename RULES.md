@@ -3,7 +3,7 @@
 | 规则 | 描述 |
 | :--- | :--- |
 | 传输方式 | 为保证交易安全性，采用HTTPS传输（开发时可使用HTTP） |
-| 数据格式 | 提交和返回数据都为JSON格式（application/json） |
+| 数据格式 | 返回数据为JSON格式（application/json） |
 | 字符编码 | 统一采用UTF-8字符编码 |
 | 内容类型 | 统一采用x-www-form-urlencoded编码格式 |
 | 签名算法 | MD5，后续会兼容SHA1、SHA256、HMAC等 |
