@@ -35,7 +35,7 @@
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://{BaseURL}/OpenPlatform/GetUserInfo",
+  "url": "http://{BaseURL}/UnifiedPay/Gateway",
   "method": "POST",
   "headers": {
     "content-type": "application/x-www-form-urlencoded",
@@ -43,7 +43,7 @@ var settings = {
     "X-Requested-With":"XMLHttpRequest",
   },
   "data": {
-    "token": "00000000-0000-0000-0000-000000000000"
+    "mch_id": "00000001"
   }
 }
 
@@ -57,9 +57,9 @@ $.ajax(settings).done(function (response) {
 ```py
 import requests
 
-url = "http://{BaseURL}/OpenPlatform/GetUserInfo"
+url = "http://{BaseURL}/UnifiedPay/Gateway"
 
-payload = "token=00000000-0000-0000-0000-000000000000"
+payload = "mch_id=00000001"
 headers = {
     'content-type': "application/x-www-form-urlencoded",
     'cache-control': "no-cache",
