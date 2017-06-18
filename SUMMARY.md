@@ -5,3 +5,6 @@
 
 ## API
 
+* [Barcode - 刷卡支付](api/barcode.md)
+  * [Pay - 提交支付](api/barcode/pay.md)
+
