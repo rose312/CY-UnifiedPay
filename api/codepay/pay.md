@@ -50,24 +50,56 @@
 | 字段名 | 必填 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
 | code | 是 | String | 状态码，详见参数规定 |
-| state | 否 | String |  |
+| state | 否 | String | 后续操作，详见参数规定 |
 | msg | 否 | String | 返回信息 |
 | sign | 是 | String | 响应结果的签名串 |
-| data | 否 | Object | 响应数据 |
 
-以下字段在code为10000的时候在data字段中返回
+以下字段在code为10000的时候有返回
 
 | 字段名 | 必填 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
-| ID | 是 | Long | 用户Id |
+| trade\_state | 是 | String | 支付方式 |
+| mch\_id | 是 | String | 超赢商户号 |
+| appid | 是 | String | 应用ID |
+| is\_subscribe | 是 | String | 用户是否关注公众号，Y-关注，N-未关注，仅在公众号类型支付有效 |
+| openid | 是 | String | 用户在商户 appid 下的唯一标识 |
+| sub\_appid | 是 | String | 应用ID |
+| sub\_is\_subscribe | 是 | String | 用户是否关注公众号，Y-关注，N-未关注，仅在公众号类型支付有效 |
+| sub\_openid | 是 | String | 用户在商户 appid 下的唯一标识 |
+| transaction\_id | 是 | String | 平台交易号 |
+| out\_transaction\_id | 是 | String | 第三方订单号 |
+| out\_trade\_no | 是 | String | 商户系统内部的定单号，32个字符内、可包含字母 |
+| total\_fee | 是 | String | 总金额，以分为单位，只能为整数 |
+| fee\_type | 否 | String | 货币类型，符合 ISO 4217 标准的三位字母代码，默认人民币：CNY |
+| bank\_type | 否 | String | 付款银行 |
+| bank\_billno | 否 | String | 银行订单号，若为第三方支付则为空 |
+| time\_end | 是 | String | 支付完成时间，格式为yyyyMMddhhmmss，如2009年12月27日9点10分10秒表示为20091227091010。时区为GMT+8 Beijing |
+| nonce\_str | 是 | String | 随机字符串 |
 
 **响应结果示例**
 
 ```js
 {
     "code": "10000",
+    "state": "0",
     "msg": "Success",
-    "data": "{\"Name\":\"YZQ\",\"CompanyName\":\"YZQ-公司名称\",\"ID\":3308444987384064,\"Phone\":\"17076616006\"}"
+    "trade_state": "wechat",
+    "mch_id": "WFT01",
+    "appid": "wx1f87d44db95cba7a",
+    "is_subscribe": "N",
+    "openid": "oywgtuCJFeGzT-QtF-8U7FHb1z3Q",
+    "sub_appid": "wxce38685bc050ef82",
+    "sub_is_subscribe": "N",
+    "sub_openid": "oHmbktxFlpoEPo2Ol5GOJniV2q-A",
+    "transaction_id": "7551000001201706196281085687",
+    "out_transaction_id": "4005572001201706196460269701",
+    "out_trade_no": "1497862554883",
+    "total_fee": "1",
+    "fee_type": "CNY",
+    "bank_type": "CFT",
+    "time_end": "20170619165616",
+    "nonce_str": "a849df6660cb4354b6fe5b23120a73ce",
+    "sign": "FA3DBE500AA82B944489AC18B53B2DAA"
 }
 ```
 
