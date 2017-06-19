@@ -60,20 +60,21 @@
 | :--- | :--- | :--- | :--- |
 | trade\_state | 是 | String | 支付方式 |
 | mch\_id | 是 | String | 超赢商户号 |
-| appid | 是 | String | 应用ID |
-| is\_subscribe | 是 | String | 用户是否关注公众号，Y-关注，N-未关注，仅在公众号类型支付有效 |
+| appid | 是 | String | 调用接口提交的公众账号ID |
+| is\_subscribe | 是 | String | 用户是否关注公众账号，仅在公众账号类型支付有效，取值范围：Y或N;Y-关注;N-未关注 |
 | openid | 是 | String | 用户在商户 appid 下的唯一标识 |
-| sub\_appid | 是 | String | 应用ID |
-| sub\_is\_subscribe | 是 | String | 用户是否关注公众号，Y-关注，N-未关注，仅在公众号类型支付有效 |
-| sub\_openid | 是 | String | 用户在商户 appid 下的唯一标识 |
+| sub\_appid | 是 | String | 调用接口提交的子商户公众账号ID |
+| sub\_is\_subscribe | 是 | String | 用户是否关注子公众账号，仅在公众账号类型支付有效，取值范围：Y或N;Y-关注;N-未关注 |
+| sub\_openid | 是 | String | 子商户appid下用户唯一标识，如需返回则请求时需要传sub\_appid |
 | transaction\_id | 是 | String | 平台交易号 |
 | out\_transaction\_id | 是 | String | 第三方订单号 |
 | out\_trade\_no | 是 | String | 商户系统内部的定单号，32个字符内、可包含字母 |
 | total\_fee | 是 | String | 总金额，以分为单位，只能为整数 |
+| coupon\_fee | 否 |  | 代金券金额，代金券金额&lt;=订单金额，订单金额 - 代金券金额 = 现金支付金额 |
 | fee\_type | 否 | String | 货币类型，符合 ISO 4217 标准的三位字母代码，默认人民币：CNY |
 | bank\_type | 否 | String | 付款银行 |
 | bank\_billno | 否 | String | 银行订单号，若为第三方支付则为空 |
-| time\_end | 是 | String | 支付完成时间，格式为yyyyMMddhhmmss，如2009年12月27日9点10分10秒表示为20091227091010。时区为GMT+8 Beijing |
+| time\_end | 是 | String | 支付完成时间，格式为yyyyMMddHHmmss，如2009年12月25日9点10分10秒表示为20091225091010。时区为GMT+8 Beijing |
 | nonce\_str | 是 | String | 随机字符串 |
 
 **响应结果示例**
