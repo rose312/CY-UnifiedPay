@@ -27,7 +27,7 @@
 
 | 参数 | 必填 | 示例值 | 说明 |
 | :--- | :--- | :--- | :--- |
-| paytype | 是 | wechat | 支付方式，参考支付方式 |
+| paytype | 是 | wechat | 支付方式，详见参数规定 |
 | mch\_id | 是 | 00000001 | 超赢商户号 |
 | out\_trade\_no | 是 | 1497769914931 | 商户系统内部的订单号 ,5到32个字符、 只能包含字母数字或者下划线，区分大小写，确保在商户系统唯一 |
 | device\_info | 否 | 013467007045764 | 终端设备号，商户自定义。特别说明：对于QQ钱包支付，此参数必传，否则会报错。 |
@@ -43,14 +43,15 @@
 
 **请求参数示例**
 
-> method=pay&mch\_id=00000001&version=1.0&product=yunpos&out\_trade\_no=1497769914931&auth\_code=123123123&body=%E8%B6%85%E8%B5%A2%E6%94%AF%E4%BB%98&mch\_create\_ip=192.168.1.99&total\_fee=1&sign=00000000000000000000000000000000
+> method=pay&mch\_id=00000001&version=1.0&pid=yunpos&out\_trade\_no=1497769914931&auth\_code=123123123&body=%E8%B6%85%E8%B5%A2%E6%94%AF%E4%BB%98&mch\_create\_ip=192.168.1.99&total\_fee=1&sign=00000000000000000000000000000000
 
 **响应结果**
 
 | 字段名 | 必填 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
-| code | 是 | String | 状态码 |
-| msg | 是 | String | 返回信息 |
+| code | 是 | String | 状态码，详见参数规定 |
+| state | 否 | String |  |
+| msg | 否 | String | 返回信息 |
 | sign | 是 | String | 响应结果的签名串 |
 | data | 否 | Object | 响应数据 |
 
