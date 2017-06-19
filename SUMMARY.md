@@ -2,6 +2,7 @@
 
 * [概述](README.md)
 * [接口规则](RULES.md)
+* [参数规定](parameters.md)
 
 ## API
 
