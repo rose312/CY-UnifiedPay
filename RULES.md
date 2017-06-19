@@ -43,7 +43,9 @@ var settings = {
     "X-Requested-With":"XMLHttpRequest",
   },
   "data": {
-    "mch_id": "00000001"
+    "method": "pay",
+    "mch_id": "00000001",
+    "sign", "00000000000000000000000000000000"
   }
 }
 
@@ -59,7 +61,7 @@ import requests
 
 url = "http://{BaseURL}/UnifiedPay/Gateway"
 
-payload = "mch_id=00000001"
+payload = "mch_id=00000001&method=pay&sign=00000000000000000000000000000000"
 headers = {
     'content-type': "application/x-www-form-urlencoded",
     'cache-control': "no-cache",
@@ -74,9 +76,9 @@ print(response.text)
 
 | 字段名 | 必填 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
-| code | 是 | String | 状态码，10000-成功，10001-错误，10002-令牌无效 |
-| msg | 是 | String | 返回信息，若调用失败则为错误原因 |
-| data | 否 | String | 当调用成功且接口有具体数据响应，则有返回。 |
+| code | 是 | String | 状态码；10000-成功，10001-错误，10002-签名错误，10003-参数错误，10004-商户错误 |
+| msg | 否 | String | 返回信息；若调用失败则为错误原因 |
+| state | 否 | String | 后续操作；0-成功，1-需要调用查询，2-需要重新调用 |
 
 ###### 成功示例
 
@@ -84,7 +86,7 @@ print(response.text)
 {
     "code": "10000",
     "msg": "Success",
-    "data": "{\"Name\":\"姓名\",\"CompanyName\":\"公司名称\",\"ID\":3308444987384064,\"Phone\":\"13800138000\"}"
+    "state": "0"
 }
 ```
 
@@ -92,8 +94,9 @@ print(response.text)
 
 ```js
 {
-    "code": "10001",
-    "msg": "用户未登录"
+    "code": "10002",
+    "msg": "签名错误",
+    "state": "2"
 }
 ```
 
