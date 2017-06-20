@@ -76,17 +76,21 @@ print(response.text)
 
 | **字段名** | **必填** | **类型** | **说明** |
 | :--- | :--- | :--- | :--- |
-| code | 是 | String | 状态码；10000-成功，10001-错误，10002-签名错误，10003-参数错误，10004-商户错误 |
+| state | 是 | String | 通讯状态，详见参数规定 |
+| code | 是 | String | 状态码 ，详见参数规定 |
 | msg | 否 | String | 返回信息；若调用失败则为错误原因 |
-| state | 否 | String | 后续操作；0-成功，1-调用查询，2-重新调用 |
+| trade\_state | 否 | String | 交易状态，详见参数规定 |
+| sign | 是 | String | 响应结果的签名串 |
 
 ###### 成功示例
 
 ```js
 {
+    "state": "SUCCESS"
     "code": "10000",
-    "msg": "Success",
-    "state": "0"
+    "msg": "SUCCESS",
+    "trade_state": "SUCCESS",
+    "sign": "00000000000000000000000000000000"
 }
 ```
 
@@ -94,9 +98,10 @@ print(response.text)
 
 ```js
 {
+    "state": "FAIL"
     "code": "10002",
     "msg": "签名错误",
-    "state": "2"
+    "sign": "00000000000000000000000000000000"
 }
 ```
 
