@@ -2,7 +2,7 @@
 
 **应用场景**
 
-收银员使用扫码设备读取微信（或支付宝等电子钱包）用户刷卡授权码以后，调用该接口发起支付对用户进行收款。
+根据商户订单号或者平台订单号查询平台的具体订单信息。
 
 ###### 
 
@@ -27,38 +27,29 @@
 
 | 参数 | 必填 | 示例值 | 说明 |
 | :--- | :--- | :--- | :--- |
-| paytype | 是 | wechat | 支付方式，详见参数规定 |
+| paytype | 是 | WECHAT | 支付方式，详见参数规定 |
 | mch\_id | 是 | 00000001 | 超赢商户号 |
-| out\_trade\_no | 是 | 1497769914931 | 商户系统内部的订单号 ,5到32个字符、 只能包含字母数字或者下划线，区分大小写，确保在商户系统唯一 |
-| device\_info | 否 | 013467007045764 | 终端设备号，商户自定义。特别说明：对于QQ钱包支付，此参数必传，否则会报错。 |
-| body | 是 | image形象店-深圳腾大- QQ公仔 | 商品描述 |
-| attach | 否 | 说明 | 商户附加信息，可做扩展参数 |
-| total\_fee | 是 | 1 | 总金额，以分为单位，只能为整数 |
-| mch\_create\_ip | 是 | 8.8.8.8 | 调用支付API的机器IP |
-| auth\_code | 是 | 120061098828009406 | 扫码支付授权码， 设备读取用户展示的条码信息 |
-| op\_user\_id | 否 | 00000001 | 操作员帐号，默认为商户号 |
-| op\_shop\_id | 否 | md\_001 | 门店编号 |
-| op\_device\_id | 否 | device\_01 | 设备编号 |
-| goods\_tag | 否 | hot | 商品标记 |
+| out\_trade\_no | 否 | 1497769914931 | 商户系统内部的订单号，out\_trade\_no和transaction\_id至少一个必填，同时存在时transaction\_id优先 |
+| transaction\_id | 否 | 7551000001201706166172780576 | 平台交易号，out\_trade\_no和transaction\_id至少一个必填，同时存在时transaction\_id优先。 |
 
 **请求参数示例**
 
-> method=pay&mch\_id=00000001&version=1.0&pid=yunpos&out\_trade\_no=1497769914931&auth\_code=123123123&body=%E8%B6%85%E8%B5%A2%E6%94%AF%E4%BB%98&mch\_create\_ip=192.168.1.99&total\_fee=1&sign=00000000000000000000000000000000
+> method=orderquery&paytype=WECHAT&mch\_id=00000001&out\_trade\_no=1497769914931&sign=00000000000000000000000000000000
 
 **响应结果**
 
 | 字段名 | 必填 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
-| code | 是 | String | 状态码，详见参数规定 |
-| state | 否 | String | 后续操作，详见参数规定 |
+| state | 是 | String | 通讯状态，详见参数规定 |
+| code | 是 | String | 状态码 ，详见参数规定 |
 | msg | 否 | String | 返回信息 |
+| trade\_state | 否 | String | 交易状态，详见参数规定 |
 | sign | 是 | String | 响应结果的签名串 |
 
-以下字段在code为10000的时候有返回
+以下字段在state和trade\_state都为SUCCESS的时候有返回
 
 | 字段名 | 必填 | 类型 | 说明 |
 | :--- | :--- | :--- | :--- |
-| trade\_state | 是 | String | 支付方式 |
 | mch\_id | 是 | String | 超赢商户号 |
 | appid | 是 | String | 调用接口提交的公众账号ID |
 | is\_subscribe | 是 | String | 用户是否关注公众账号，仅在公众账号类型支付有效，取值范围：Y或N;Y-关注;N-未关注 |
@@ -70,8 +61,9 @@
 | out\_transaction\_id | 是 | String | 第三方订单号 |
 | out\_trade\_no | 是 | String | 商户系统内部的定单号，32个字符内、可包含字母 |
 | total\_fee | 是 | String | 总金额，以分为单位，只能为整数 |
-| coupon\_fee | 否 |  | 代金券金额，代金券金额&lt;=订单金额，订单金额 - 代金券金额 = 现金支付金额 |
+| coupon\_fee | 否 | String | 代金券金额，代金券金额&lt;=订单金额，订单金额 - 代金券金额 = 现金支付金额 |
 | fee\_type | 否 | String | 货币类型，符合 ISO 4217 标准的三位字母代码，默认人民币：CNY |
+| attach | 否 | String | 商家数据包，原样返回 |
 | bank\_type | 否 | String | 付款银行 |
 | bank\_billno | 否 | String | 银行订单号，若为第三方支付则为空 |
 | time\_end | 是 | String | 支付完成时间，格式为yyyyMMddHHmmss，如2009年12月25日9点10分10秒表示为20091225091010。时区为GMT+8 Beijing |
@@ -81,10 +73,10 @@
 
 ```js
 {
+    "state": "SUCCESS",
     "code": "10000",
-    "state": "0",
-    "msg": "Success",
-    "trade_state": "wechat",
+    "trade_state": "SUCCESS",
+    "msg": "SUCCESS",
     "mch_id": "WFT01",
     "appid": "wx1f87d44db95cba7a",
     "is_subscribe": "N",
@@ -100,7 +92,7 @@
     "bank_type": "CFT",
     "time_end": "20170619165616",
     "nonce_str": "a849df6660cb4354b6fe5b23120a73ce",
-    "sign": "FA3DBE500AA82B944489AC18B53B2DAA"
+    "sign": "D292DB710872C023A9A1CF429457E0B3"
 }
 ```
 

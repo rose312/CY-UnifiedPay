@@ -43,7 +43,7 @@
 
 **请求参数示例**
 
-> method=pay&mch\_id=00000001&version=1.0&pid=yunpos&out\_trade\_no=1497769914931&auth\_code=123123123&body=%E8%B6%85%E8%B5%A2%E6%94%AF%E4%BB%98&mch\_create\_ip=192.168.1.99&total\_fee=1&sign=00000000000000000000000000000000
+> method=pay&mch\_id=00000001&version=1.0&pid=yunpos&paytype=WECHAT&out\_trade\_no=1497769914931&auth\_code=123123123&body=%E8%B6%85%E8%B5%A2%E6%94%AF%E4%BB%98&mch\_create\_ip=192.168.1.99&total\_fee=1&sign=00000000000000000000000000000000
 
 **响应结果**
 
