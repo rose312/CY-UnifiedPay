@@ -55,10 +55,12 @@
 | mch\_id | 是 | String | 超赢商户号 |
 | appid | 是 | String | 调用接口提交的公众账号ID |
 | transaction\_id | 是 | String | 平台交易号 |
+| out\_transaction\_id | 是 | String | 第三方订单号 |
 | out\_trade\_no | 是 | String | 商户系统内部的定单号，32个字符内、可包含字母 |
 | refund\_count | 是 | String | 退款笔数 |
-|  |  |  |  |
-|  |  |  |  |
+| - | - | - | - |
+| - | - | - | - |
+| out\_refund\_id\_$n | 是 | String | 商户退款单ID |
 | out\_refund\_no\_$n | 是 | String | 商户退款单号 |
 | refund\_id\_$n | 是 | String | 平台退款单号 |
 | refund\_channel\_$n | 否 | String | 退款渠道，ORIGINAL—原路退款，默认 |
@@ -66,11 +68,11 @@
 | coupon\_refund\_fee\_$n | 否 | String | 现金券退款金额 &lt;= 退款金额， 退款金额-现金券退款金额为现金 |
 | refund\_time\_$n | 否 | String | 退款时间，格式为yyyyMMddHHmmss，如2009年12月25日9点10分10秒表示为20091225091010。时区为GMT+8 Beijing |
 | refund\_status\_$n | 是 | String | 退款状态：SUCCESS—退款成功FAIL—退款失败PROCESSING—退款处理中NOTSURE—未确定， 需要商户原退款单号重新发起CHANGE—转入代发，退款到银行发现用户的卡作废或者冻结了，导致原路退款银行卡失败，资金回流到商户的现金帐号，需要商户人工干预，通过线下或者平台转账的方式进行退款。 |
-|  |  |  |  |
-|  |  |  |  |
+| - | - | - | - |
+| - | - | - | - |
 | nonce\_str | 是 | String | 随机字符串 |
 
-> _$n 表示记录的序号，取值为 0~\($ refund\_count -1\)，例如 refund\_count 指示返回的退款记录有 2 条。第一条序号为“0”，第二条序号为“1”。_
+> _$n 表示记录的序号，取值为 0~\($ refund\_count -1\)，例如 refund\_count 指示返回的退款记录有 2 条。第一条序号为“0”，第二条序号为“1”。_
 
 **响应结果示例**
 
