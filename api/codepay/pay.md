@@ -34,7 +34,7 @@
 | body | 是 | image形象店-深圳腾大- QQ公仔 | 商品描述 |
 | attach | 否 | 说明 | 商户附加信息，可做扩展参数 |
 | total\_fee | 是 | 1 | 总金额，以分为单位，只能为整数 |
-| mch\_create\_ip | 是 | 8.8.8.8 | 调用支付API的机器IP |
+| mch\_create\_ip | 否 | 114.114.114.114 | 调用支付API的机器IP |
 | auth\_code | 是 | 120061098828009406 | 扫码支付授权码， 设备读取用户展示的条码信息 |
 | op\_user\_id | 否 | 00000001 | 操作员帐号，默认为商户号 |
 | op\_shop\_id | 否 | md\_001 | 门店编号 |
@@ -43,7 +43,7 @@
 
 **请求参数示例**
 
-> method=pay&mch\_id=00000001&version=1.0&pid=yunpos&paytype=WECHAT&out\_trade\_no=1497769914931&auth\_code=123123123&body=%E8%B6%85%E8%B5%A2%E6%94%AF%E4%BB%98&mch\_create\_ip=192.168.1.99&total\_fee=1&sign=00000000000000000000000000000000
+> method=pay&mch\_id=00000001&version=1.0&pid=yunpos&paytype=WECHAT&out\_trade\_no=1497769914931&auth\_code=123123123&body=%E8%B6%85%E8%B5%A2%E6%94%AF%E4%BB%98&total\_fee=1&sign=00000000000000000000000000000000
 
 **响应结果**
 
