@@ -29,7 +29,7 @@
 | :--- | :--- |
 | SUCCESS | 交易成功 |
 | FAIL | 交易失败 |
-| USERPAYING | 支付中 |
+| PROCESSING | 交易处理中 |
 
 ### paytype - 支付方式
 
