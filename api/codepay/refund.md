@@ -82,26 +82,20 @@
 
 ```js
 {
+    "state": "SUCCESS",
     "code": "10000",
-    "state": "0",
-    "msg": "Success",
-    "trade_state": "wechat",
+    "trade_state": "SUCCESS",
+    "msg": "SUCCESS",
     "mch_id": "WFT01",
-    "appid": "wx1f87d44db95cba7a",
-    "is_subscribe": "N",
-    "openid": "oywgtuCJFeGzT-QtF-8U7FHb1z3Q",
-    "sub_appid": "wxce38685bc050ef82",
-    "sub_is_subscribe": "N",
-    "sub_openid": "oHmbktxFlpoEPo2Ol5GOJniV2q-A",
-    "transaction_id": "7551000001201706196281085687",
-    "out_transaction_id": "4005572001201706196460269701",
-    "out_trade_no": "1497862554883",
-    "total_fee": "1",
-    "fee_type": "CNY",
-    "bank_type": "CFT",
-    "time_end": "20170619165616",
-    "nonce_str": "a849df6660cb4354b6fe5b23120a73ce",
-    "sign": "FA3DBE500AA82B944489AC18B53B2DAA"
+    "transaction_id": "7551000001201706196281179416",
+    "out_trade_no": "1497864715096",
+    "out_transaction_id": "4005572001201706196469530753",
+    "out_refund_no": "TK-1497864715096",
+    "refund_id": "7551000001201706215157548269",
+    "refund_channel": "ORIGINAL",
+    "refund_fee": "1",
+    "nonce_str": "743dd9c1123c4015828f3d4216a1066c",
+    "sign": "E0C19462FF594C1D3075D14AF1C17B87"
 }
 ```
 
