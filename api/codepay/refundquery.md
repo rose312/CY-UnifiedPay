@@ -92,7 +92,7 @@
     "code": "10000",
     "trade_state": "SUCCESS",
     "msg": "SUCCESS",
-    "mch_id": "WFT03",
+    "mch_id": "00000001",
     "appid": "wxe00fda5293a2fa25",
     "transaction_id": "199520175115201706224112697859",
     "out_transaction_id": "4005572001201706226919222698",

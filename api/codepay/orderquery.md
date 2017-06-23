@@ -55,7 +55,7 @@
 | is\_subscribe | 是 | 用户是否关注公众账号，仅在公众账号类型支付有效，取值范围：Y或N;Y-关注;N-未关注 |
 | openid | 是 | 用户在商户 appid 下的唯一标识 |
 | sub\_appid | 是 | 调用接口提交的子商户公众账号ID |
-| sub\_is\_subscribe | 是 | 用户是否关注子公众账号，仅在公众账号类型支付有效，取值范围：Y或N;Y-关注;N-未关注 |
+| sub\_is\_subscribe | 是 | 用户是否关注子公众账号，仅在公众账号类型支付有效，取值范围：Y或N；Y-关注；N-未关注 |
 | sub\_openid | 是 | 子商户appid下用户唯一标识，如需返回则请求时需要传sub\_appid |
 | transaction\_id | 是 | 平台交易号 |
 | out\_transaction\_id | 是 | 第三方订单号 |
@@ -77,7 +77,7 @@
     "code": "10000",
     "trade_state": "SUCCESS",
     "msg": "SUCCESS",
-    "mch_id": "WFT01",
+    "mch_id": "00000001",
     "appid": "wx1f87d44db95cba7a",
     "is_subscribe": "N",
     "openid": "oywgtuCJFeGzT-QtF-8U7FHb1z3Q",

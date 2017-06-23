@@ -61,7 +61,7 @@
 | :--- | :--- | :--- |
 | mch\_id | 是 | 超赢商户号 |
 | appid | 是 | 调用接口提交的公众账号ID |
-| is\_subscribe | 是 | 用户是否关注公众账号，仅在公众账号类型支付有效，取值范围：Y或N;Y-关注;N-未关注 |
+| is\_subscribe | 是 | 用户是否关注公众账号，仅在公众账号类型支付有效，取值范围：Y或N；Y-关注；N-未关注 |
 | openid | 是 | 用户在商户 appid 下的唯一标识 |
 | sub\_appid | 是 | 调用接口提交的子商户公众账号ID |
 | sub\_is\_subscribe | 是 | 用户是否关注子公众账号，仅在公众账号类型支付有效，取值范围：Y或N;Y-关注;N-未关注 |
@@ -86,7 +86,7 @@
     "code": "10000",
     "trade_state": "SUCCESS",
     "msg": "SUCCESS",
-    "mch_id": "WFT01",
+    "mch_id": "00000001",
     "appid": "wx1f87d44db95cba7a",
     "is_subscribe": "N",
     "openid": "oywgtuCJFeGzT-QtF-8U7FHb1z3Q",
