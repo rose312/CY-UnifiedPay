@@ -21,7 +21,7 @@
 
 | 参数 | 必填 | 示例值 | 说明 |
 | :--- | :--- | :--- | :--- |
-| method | 是 | orderquery | 接口名称，orderquery |
+| method | 是 | refundquery | 接口名称，refundquery |
 | version | 否 | 1.0 | 调用方版本号 |
 | pid | 否 | yunpos | 调用方产品名称 |
 | sign | 是 | 00000000000000000000000000000000 | 请求参数的签名串 |
