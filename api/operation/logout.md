@@ -1,8 +1,8 @@
-# Login - 登录
+# Logout - 登出
 
 **应用场景**
 
-该接口提供用户验证，获取Token，并完成通过Token进行后续的业务逻辑。
+该接口提供用户登出。
 
 **校验签名**
 
@@ -10,7 +10,7 @@
 
 **接口链接**
 
-> [http://{BaseURL}/Manage/Login](http://{BaseURL}/OpenPlatform/Login)
+> [http://{BaseURL}/](http://{BaseURL}/OpenPlatform/Login)[Manage](http://{BaseURL}/OpenPlatform/Login)[/Logout](http://{BaseURL}/OpenPlatform/Login)
 
 **提交方式**
 
@@ -20,12 +20,12 @@
 
 | 参数 | 必填 | 示例值 | 说明 |
 | :--- | :--- | :--- | :--- |
-| account | 是 | aaa | 帐号 |
-| pwd | 是 | bbb | 密码 |
+| user\_id | 是 | 00000000000000000000000000000000 | 用户Id |
+| token | 是 | 00000000000000000000000000000000 | Token令牌 |
 
 **请求参数示例**
 
-> account=aaa&pwd=bbb
+> user\_id=00000000000000000000000000000000&token=00000000000000000000000000000000
 
 **响应结果**
 
@@ -39,10 +39,7 @@
 
 | 字段名 | 必填 | 说明 |
 | :--- | :--- | :--- |
-| user\_id | 是 | 用户Id |
-| real\_name | 是 | 昵称 |
-| head\_img | 否 | 头像图片地址 |
-| token | 是 | Token令牌 |
+| redirect\_uri | 否 | 回调地址 |
 
 **响应结果示例**
 
@@ -50,7 +47,7 @@
 {
     "code": "SUCCESS",
     "msg": "SUCCESS",
-    "data": "{\"user_id\":\"00000000000000000000000000000000\",\"real_name\":\"aaa\",\"token\":\"00000000000000000000000000000000\"}"
+    "data": "{\"redirect_uri\":\"http://{BaseURL}/Manage/Login\"}"
 }
 ```
 

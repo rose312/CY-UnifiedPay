@@ -14,4 +14,5 @@
   * [Cancel - 交易撤销](api/codepay/cancel.md)
 * [运维管理](api/operation.md)
   * [Login - 登录](api/operation/login.md)
+  * [Logout - 登出](api/operation/logout.md)
 
