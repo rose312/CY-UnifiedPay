@@ -9,6 +9,10 @@
 1. 如果单个支付订单部分退款次数超过20次请使用平台退款单号查询
 2. 若存在多条退款单时，退款状态请以refund\_list中refund\_status字段为准
 
+**校验签名**
+
+> 是
+
 **接口链接**
 
 > [http://{BaseURL}/UnifiedPay/Gateway](http://{BaseURL}/OpenPlatform/Login)
