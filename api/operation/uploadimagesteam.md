@@ -39,7 +39,7 @@
 ```js
 {
     "errorcode": "0",
-    "data": "/UpLoad/Temp/597e64e68d264273a4e23e477d472c5b.jpg"
+    "data": "597e64e68d264273a4e23e477d472c5b.jpg"
 }
 ```
 

@@ -20,12 +20,12 @@
 
 | 参数 | 必填 | 示例值 | 说明 |
 | :--- | :--- | :--- | :--- |
-| img\_url | 是 | /UpLoad/Temp/597e64e68d264273a4e23e477d472c5b.jpg | 图片路径 |
+| img\_url | 是 | 597e64e68d264273a4e23e477d472c5b.jpg | 图片名称 |
 | type | 是 | 2 | 图像类型，详见参数规定 |
 
 **请求参数示例**
 
-> img\_url=%2FUpLoad%2FTemp%2F597e64e68d264273a4e23e477d472c5b.jpg&type=2
+> img\_url=597e64e68d264273a4e23e477d472c5b.jpg&type=2
 
 **响应结果**
 
