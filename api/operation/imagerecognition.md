@@ -20,7 +20,7 @@
 
 | 参数 | 必填 | 示例值 | 说明 |
 | :--- | :--- | :--- | :--- |
-| img\_url | 是 | /UpLoad/Temp/597e64e68d264273a4e23e477d472c5b.jpg | jpg格式图片，进行base64编码，去掉前缀描述**【data:image/jpeg;base64,】** |
+| img\_url | 是 | /UpLoad/Temp/597e64e68d264273a4e23e477d472c5b.jpg | 图片路径 |
 | type | 是 | 2 | 图像类型，详见参数规定 |
 
 **请求参数示例**
