@@ -15,6 +15,6 @@
 * [运维管理](api/operation.md)
   * [Login - 登录](api/operation/login.md)
   * [Logout - 登出](api/operation/logout.md)
-  * [UpLoadImageSteam - 上传图片](api/operation/uploadimagesteam.md)
+  * [UpLoadImageSteam - 图片上传](api/operation/uploadimagesteam.md)
   * [ImageRecognition - 图像识别](api/operation/imagerecognition.md)
 
