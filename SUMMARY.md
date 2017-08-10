@@ -17,4 +17,5 @@
   * [Logout - 登出](api/operation/logout.md)
   * [UpLoadImageSteam - 图片上传](api/operation/uploadimagesteam.md)
   * [ImageRecognition - 图像识别](api/operation/imagerecognition.md)
+  * [MchApply - 商户进件](api/operation/mchapply.md)
 
