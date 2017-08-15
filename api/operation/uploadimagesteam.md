@@ -1,8 +1,8 @@
-# UpLoadImageSteam - 图片上传
+# UpLoadImageSteam - 进件图片上传
 
 **应用场景**
 
-该接口提供图片上传，并返回图片临时目录。
+该接口提供进件图片上传，并返回图片临时目录。
 
 **校验签名**
 
@@ -10,7 +10,7 @@
 
 **接口链接**
 
-> [http://{BaseURL}/Utility/UpLoadImageSteam](http://{BaseURL}/OpenPlatform/Login)
+> [http://{BaseURL}/UnifiedPay/UpLoadImageSteam](http://{BaseURL}/OpenPlatform/Login)
 
 **提交方式**
 
@@ -20,11 +20,12 @@
 
 | 参数 | 必填 | 示例值 | 说明 |
 | :--- | :--- | :--- | :--- |
+| picType | 是 | 1 | 进件图片类型，详见参数规定 |
 | content | 是 | /9j/4AAQSkZJRgA | jpg格式图片，进行base64编码，去掉前缀描述**【data:image/jpeg;base64,】** |
 
 **请求参数示例**
 
-> content=/9j/4AAQSkZJRgA
+> content=/9j/4AAQSkZJRgA&picType=1
 
 **响应结果**
 
@@ -39,7 +40,7 @@
 ```js
 {
     "errorcode": "0",
-    "data": "597e64e68d264273a4e23e477d472c5b.jpg"
+    "data": "e4afb9e8-7db9-4ddb-954c-9b7c28961953.jpg"
 }
 ```
 
