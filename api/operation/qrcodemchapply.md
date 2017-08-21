@@ -73,7 +73,7 @@
 
 **请求参数示例**
 
-> content=/9j/4AAQSkZJRgA
+> LicenceName=营业执照商户名称&Mobile=15920000000&LicenceBegin=&Licence=e7e8ae40-450b-4e79-a5f0-c757c38b37dc.jpg&BankName=中国工商银行股份有限公司广州第一支行&BankCityId=190100&CountyId=190104&ShortName=超赢测试3337512986861568&flag\_type=0&ProvinceId=190000&LegalPerson=yzq&MchId=3337512986861568&IdCard=440102201701010000&BankProvinceId=190000&BankAccount=6200000000000000000&BankImgId=bank.jpg&BankMobile=15920000000&CityId=190100&FullName=广州超赢测试3337512986861568&LegalPersonCertCode=440102201701010000&SalesSN=99&Linkman=&LicenceCode=92520628MA6DQJ8E99&LicenceRegisterCode=&ContactLine=102581000013&LicenceAddress=&Email=yinziqiang@chaoying.com.cn&AccountName=张三&BankId=1&Telephone=15920000000&Address=五山路金山大厦南塔303室&IndustryId=487&LegalPersonCertExpires=长期&LegalPersonType=0&DealType=0&LicenceExpires=&LegalPersonImg1=95b67a47-81e1-4b24-a1dc-07630eebbb40.jpg&LegalPersonImg2=95b67a47-81e1-4b24-a1dc-07630eebbb40.jpg&LegalPersonImg3=95b67a47-81e1-4b24-a1dc-07630eebbb40.jpg&IdCardType=1&LegalPersonCertType=0&AccountType=2
 
 **响应结果**
 
