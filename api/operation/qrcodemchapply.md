@@ -41,30 +41,30 @@
 | LegalPersonImg1 | 是 | 95b67a47-81e1-4b24-a1dc-07630eebbb40.jpg | 法人身份证正面照临时文件名称，通过进件图片上传获得 |
 | LegalPersonImg2 | 是 | 95b67a47-81e1-4b24-a1dc-07630eebbb40.jpg | 法人身份证背面照临时文件名称，通过进件图片上传获得 |
 | LegalPersonImg3 | 否 | 95b67a47-81e1-4b24-a1dc-07630eebbb40.jpg | 法人手持身份证照临时文件名称，通过进件图片上传获得 |
-| LegalPersonCertCode | 是 |  | 法人证件号码 |
-| LegalPersonCertExpires | 否 |  | 法人证件有效期 |
-| jyfw | 否 |  | 经营范围 |
-| zzjgdmzId | 否 |  | 组织机构代码证照临时文件名称，通过进件图片上传获得 |
-| txzzId | 否 |  | 特殊资质照临时文件名称，通过进件图片上传获得 |
-| ProtocolId | 否 |  | 商户协议照临时文件名称，通过进件图片上传获得 |
-| AgentId | 否 |  | 代理商编号 |
-| DealerSN | 否 |  | 经销商编号 |
-| SalesSN | 是 |  | 推广员编号 |
-| IndustryId | 是 |  | 行业类别编号 |
-| ProvinceId | 是 |  | 商铺所在省编号 |
-| CityId | 是 |  | 商铺所在市编号 |
-| CountyId | 是 |  | 商铺所在区编号 |
-| Address | 是 |  | 商铺详细地址，不含省市区 |
-| flag\_type | 是 |  | 商户类型 |
-| BankAccount | 是 |  | 结算账户银行卡号 |
-| BankId | 是 |  | 结算账户银行编号 |
-| AccountName | 是 |  | 结算账户开户人名称 |
+| LegalPersonCertCode | 是 | 440102201701010000 | 法人证件号码 |
+| LegalPersonCertExpires | 否 | 长期 | 法人证件有效期 |
+| jyfw | 否 | 零售行业 | 经营范围 |
+| zzjgdmzId | 否 | 95b67a47-81e1-4b24-a1dc-07630eebbb40.jpg | 组织机构代码证照临时文件名称，通过进件图片上传获得 |
+| txzzId | 否 | 95b67a47-81e1-4b24-a1dc-07630eebbb40.jpg | 特殊资质照临时文件名称，通过进件图片上传获得 |
+| ProtocolId | 否 | 95b67a47-81e1-4b24-a1dc-07630eebbb40.jpg | 商户协议照临时文件名称，通过进件图片上传获得 |
+| AgentId | 否 | 100 | 代理商编号 |
+| DealerSN | 否 | 100 | 经销商编号 |
+| SalesSN | 是 | 99 | 推广员编号 |
+| IndustryId | 是 | 487 | 行业类别编号 |
+| ProvinceId | 是 | 190000 | 商铺所在省编号 |
+| CityId | 是 | 190100 | 商铺所在市编号 |
+| CountyId | 是 | 190104 | 商铺所在区编号 |
+| Address | 是 | 五山路金山大厦南塔303室 | 商铺详细地址，不含省市区 |
+| flag\_type | 是 | 0 | 商户类型，详见参数规定；0：个体户，1：企业，2：政府及事业单位 |
+| BankAccount | 是 | 6200000000000000000 | 结算账户银行卡号 |
+| BankId | 是 | 1 | 结算账户银行编号 |
+| AccountName | 是 | 张三 | 结算账户开户人名称 |
 | AccountType | 是 | 1 | 结算账户类型，详见参数规定；1：企业，2：个人 |
-| ContactLine | 是 |  | 结算账户银行联行号 |
-| BankFullName | 否 |  | 开户银行名称 |
-| BankName | 是 |  | 开户银行支行名称 |
-| BankProvinceId | 是 |  | 结算账户银行所在省 |
-| BankCityId | 是 |  | 结算账户银行所在市 |
+| ContactLine | 是 | 102581000013 | 结算账户银行联行号 |
+| BankFullName | 否 | 中国工商银行 | 开户银行名称 |
+| BankName | 是 | 中国工商银行股份有限公司广州第一支行 | 开户银行支行名称 |
+| BankProvinceId | 是 | BankProvinceId | 结算账户银行所在省 |
+| BankCityId | 是 | 190100 | 结算账户银行所在市 |
 | IdCardType | 否 | 1 | 结算账户银行卡持卡人证件类型；1：身份证，2：护照（账户类型为企业时AccountType=1，非必填） |
 | IdCard | 否 | 440102201701010000 | 结算账户银行卡持卡人证件号码（账户类型为企业时AccountType=1，非必填） |
 | BankImgId | 是 | 95b67a47-81e1-4b24-a1dc-07630eebbb41.jpg | 结算账户银行卡照临时文件名称，通过进件图片上传获得 |
