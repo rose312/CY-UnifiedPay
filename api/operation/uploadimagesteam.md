@@ -20,6 +20,7 @@
 
 | 参数 | 必填 | 示例值 | 说明 |
 | :--- | :--- | :--- | :--- |
+| PaymentChannelId | 否 | SPDB | 进件通道，详见参数规定 |
 | picType | 是 | 1 | 进件图片类型，详见参数规定 |
 | content | 是 | /9j/4AAQSkZJRgA | jpg格式图片，进行base64编码，去掉前缀描述**【data:image/jpeg;base64,】**；请对图片进行压缩，上传大小限制在1MB以下 |
 
