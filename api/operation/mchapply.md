@@ -1,4 +1,4 @@
-# MchApply - 商户进件
+# QrCodeMchApply - 商户进件
 
 **应用场景**
 
