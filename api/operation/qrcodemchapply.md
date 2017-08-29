@@ -50,7 +50,7 @@
 | ProtocolId | 否 | 95b67a47-81e1-4b24-a1dc-07630eebbb40.jpg | 商户协议照临时文件名称，通过进件图片上传获得 |
 | AgentId | 否 | 100 | 代理商编号 |
 | DealerSN | 否 | 100 | 经销商编号 |
-| SalesSN | 是 | 99 | 推广员编号 |
+| SalesSN | 否 | 99 | 推广员编号 |
 | IndustryId | 是 | 487 | 行业类别编号 |
 | ProvinceId | 是 | 190000 | 商铺所在省编号 |
 | CityId | 是 | 190100 | 商铺所在市编号 |
