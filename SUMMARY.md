@@ -18,4 +18,6 @@
   * [UpLoadImageSteam - 进件图片上传](api/operation/uploadimagesteam.md)
   * [ImageRecognition - 图像识别](api/operation/imagerecognition.md)
   * [QrCodeMchApply - 商户进件](api/operation/qrcodemchapply.md)
+  * [GetMchId - 手机号获取超赢商户号](api/operation/getmchid.md)
+  * [Mch\_Reg - 添加注册超赢虚拟商户接口](api/operation/mchreg.md)
 

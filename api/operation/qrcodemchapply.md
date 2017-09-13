@@ -10,7 +10,7 @@
 
 **接口链接**
 
-> [http://{BaseURL}/UnifiedPay/QrCodeMchApply](http://{BaseURL}/OpenPlatform/Login)
+> [http://{BaseURL}/Mch/QrCodeApply](http://{BaseURL}/OpenPlatform/Login)
 
 **提交方式**
 
