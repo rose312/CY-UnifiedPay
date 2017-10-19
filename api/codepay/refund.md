@@ -75,6 +75,7 @@
 | mch\_id | 是 | 超赢商户号 |
 | transaction\_id | 是 | 平台交易号 |
 | out\_trade\_no | 是 | 商户系统内部的定单号，32个字符内、可包含字母 |
+| out\_transaction\_id | 是 | 第三方退款单号 |
 | out\_refund\_no | 是 | 商户退款单号 |
 | refund\_id | 是 | 平台退款单号 |
 | refund\_channel | 否 | 退款渠道，ORIGINAL—原路退款，默认 |
