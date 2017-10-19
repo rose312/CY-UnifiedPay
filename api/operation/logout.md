@@ -10,7 +10,7 @@
 
 **接口链接**
 
-> http://{BaseURL}/Manage/Logout
+> [http://{BaseURL}/Manage/Logout](http://{BaseURL}/Manage/Logout)
 
 **提交方式**
 
