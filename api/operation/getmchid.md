@@ -10,7 +10,7 @@
 
 **接口链接**
 
-> [http://{BaseURL}/Mch/GetMchId](http://{BaseURL}/OpenPlatform/Login)
+> http://{BaseURL}/Mch/GetMchId
 
 **提交方式**
 

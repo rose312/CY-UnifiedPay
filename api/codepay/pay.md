@@ -10,7 +10,7 @@
 
 **接口链接**
 
-> [http://{BaseURL}/UnifiedPay/Gateway](http://{BaseURL}/OpenPlatform/Login)
+> http://{BaseURL}/UnifiedPay/Gateway
 
 **提交方式**
 

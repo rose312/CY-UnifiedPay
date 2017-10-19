@@ -10,7 +10,7 @@
 
 **接口链接**
 
-> [http://{BaseURL}/UnifiedPay/Mch\_Reg](http://{BaseURL}/OpenPlatform/Login)
+> http://{BaseURL}/UnifiedPay/Mch\_Reg
 
 **提交方式**
 

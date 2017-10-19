@@ -10,7 +10,7 @@
 
 **接口链接**
 
-> [http://{BaseURL}/Manage/Login](http://{BaseURL}/OpenPlatform/Login)
+> http://{BaseURL}/Manage/Login
 
 **提交方式**
 

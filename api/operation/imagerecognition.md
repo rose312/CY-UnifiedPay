@@ -10,7 +10,7 @@
 
 **接口链接**
 
-> [http://{BaseURL}/Utility/ImageRecognition](http://{BaseURL}/OpenPlatform/Login)
+> http://{BaseURL}/Utility/ImageRecognition
 
 **提交方式**
 

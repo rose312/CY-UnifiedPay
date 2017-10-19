@@ -10,7 +10,7 @@
 
 **接口链接**
 
-> [http://{BaseURL}/Mch/UpLoadImageSteam](http://{BaseURL}/OpenPlatform/Login)
+> http://{BaseURL}/Mch/UpLoadImageSteam
 
 **提交方式**
 

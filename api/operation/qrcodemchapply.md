@@ -10,7 +10,7 @@
 
 **接口链接**
 
-> [http://{BaseURL}/Mch/QrCodeApply](http://{BaseURL}/OpenPlatform/Login)
+> http://{BaseURL}/Mch/QrCodeApply
 
 **提交方式**
 
