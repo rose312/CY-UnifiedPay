@@ -41,6 +41,7 @@
 | FAIL | 失败 |
 | PROCESSING | 处理中 |
 | NEED\_QUERY | 需要查询 |
+| REFUND | 转入退款 |
 
 ### paytype - 支付方式
 
