@@ -120,6 +120,10 @@
 | :--- | :--- |
 | SPDB | 浦发 |
 | CEB | 光大 |
+| BESTPAY | 翼支付 |
+| TTG | 淘淘谷 |
+| JDPAY | 京东钱包 |
+| UNIONPAY | 银联钱包 |
 
 
 

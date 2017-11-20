@@ -10,7 +10,7 @@
 
 **接口链接**
 
-> http://{BaseURL}/Mch/QrCodeApply
+> [http://{BaseURL}/Mch/QrCodeApply](http://{BaseURL}/Mch/QrCodeApply)
 
 **提交方式**
 
@@ -20,7 +20,7 @@
 
 | 参数 | 必填 | 示例值 | 说明 |
 | :--- | :--- | :--- | :--- |
-| PaymentChannelId | 否 | SPDB | 进件通道，详见参数规定 |
+| PaymentChannelId | 否 | CEB | 进件通道，为空则使用默认通道，详见参数规定 |
 | MchId | 是 | 3337512986861568 | 超赢商户号 |
 | FullName | 是 | 广州超赢测试33375 | 商户全称 |
 | ShortName | 是 | 超赢测试33375 | 商户简称 |
